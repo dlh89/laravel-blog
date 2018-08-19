@@ -9,8 +9,10 @@
             <div class="container">
               <h1 class="display-3">{{$title}}</h1>
               <p>This is the Laravel application from the "Laravel From Scartch" YouTube series.</p>
-              <p><a class="btn btn-primary btn-lg" href="/login" role="button">Login &raquo;</a></p>
-              <p><a class="btn btn-success btn-lg" href="/register" role="button">Register &raquo;</a></p>
+              <form>
+                <a class="btn btn-primary btn-lg" href="{{ route('login') }}">{{ __('Login') }} &raquo;</a>
+                <a class="btn btn-success btn-lg" href="{{ route('register') }}">{{ __('Register') }} &raquo;</a>
+              </form>
             </div>
           </div>
 @endsection
